@@ -1,0 +1,29 @@
+/* color scheme for this css page: "Neon Tones and Sharp Contrast, taken from https://www.canva.com/learn/website-color-schemes/"
+void: #0e0816, fuschia: #a239ca, Jewel: #4717f6, Stark: #e7dfdd */
+
+
+
+h1 { 
+    color: white;   
+}
+header {
+    background-color: #4717f6;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#email{
+    color: black;
+}
+
+footer {
+    background-color: #e7dfdd;
+}
+
+body {
+    background-color: #0e0816 !important;
+}
+p {
+    color: #e7dfdd;
+}
