@@ -5,19 +5,65 @@
     <title>Weston's Movies</title>
     <link rel="stylesheet" type="text/css" href="main.css"/>
     <script src="main.js"></script>
+    
+    <!--Materialize CSS: Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    
+
 </head>
 <body>
+    
+    <nav>
+        <div class="navbar-wrapper container">
+            <a href="#" class="brand-logo">Weston's Movies</a>
+            <ul class="right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <p>Welcome to Weston's Movie review site. Checkout all the movies I've made reviews for below! blah blah </p>
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+        <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+        <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+        <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+  </div>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+            Made By: Weston Verhulst
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+<!--
     <header>
-        <h1>Weston's Movie and Book Reviews</h1>
+        <h1>Book Reviews</h1>
         <h3><a href="movies.html">Movies</a> <a href="books.html">Books</a></h3>
     </header>
     
-    <p>Welcome to my blog, where I provide in-depth reviews on the latest movies and novels.<br></p>
+    <p>This is the book review portion of the website. Below is a list of novels that I have read and provided reviews for. On the right is a list of my upcoming reads.<br></p>
 
     <footer>
         <p>This website was created by Weston Verhulst</p>
         <p>Contact me at: <a href="mailto:wav369@mail.missouri.edu">wav369@mail.missouri.edu</a>.</p>
         <h5>This website was built as part of a final project for the Spring 2018 course CS2830 taught by Professor Nick Wergeles at the University of Missouri.</h5>
     </footer>
+-->
+<!--    jQuery import using Google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Materialize JS: Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('.carousel').carousel()
+  })
+    </script>
 </body>
 </html>
