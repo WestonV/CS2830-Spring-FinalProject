@@ -24,15 +24,7 @@
             </ul>
         </div>
     </nav>
-    <h5>Welcome to Weston's Movies review site. Checkout all the movies I've made reviews for below! blah blah </h5>
-    <div class="divider"></div>
-    <div class="carousel">
-        <a id="wind-river" class="carousel-item hoverable" href="movie.html"><img src="https://image.tmdb.org/t/p/w500/pySivdR845Hom4u4T2WNkJxe6Ad.jpg"></a>
-        <a id="thor-ragnarok" class="carousel-item hoverable" href="movie.html"><img src="https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg"></a>
-        <a id="ready-player-one" class="carousel-item hoverable" href="movie.html"><img src="https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg"></a>
-        <a id="Kingsman-a-golden-circle" class="carousel-item hoverable" href="movie.html"><img src="https://image.tmdb.org/t/p/w500/34xBL6BXNYFqtHO9zhcgoakS4aP.jpg"></a>
-        <a id="get-out" class="carousel-item hoverable" href="movie.html"><img src="https://image.tmdb.org/t/p/w500/1SwAVYpuLj8KsHxllTF8Dt9dSSX.jpg"></a>
-  </div>
+
     <footer class="page-footer">
         <div class="footer-copyright">
             <div class="container">
