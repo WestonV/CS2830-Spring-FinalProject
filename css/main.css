@@ -1,14 +1,16 @@
-
+/*Main Style Sheet*/
 
 .carousel-item {
     height: 75% !important;
 }
 
-
-
 footer {
     position: fixed;
     bottom: 0px;
     left: 0px;
+    width: 100%;
+}
+
+#loginButton {
     width: 100%;
 }
