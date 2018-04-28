@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Login Page</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
     
     <!--Materialize CSS: Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
@@ -25,7 +25,7 @@
 <!--    nav bar design -->
     <nav class="black">
         <div class="navbar-wrapper container">
-            <a href="index.html" class="brand-logo">Weston's Movies</a>
+            <a href="../index.html" class="brand-logo">Weston's Movies</a>
             <ul class="right">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../contact.html">Contact</a></li>
@@ -35,7 +35,7 @@
     </nav>
 
     
-<form action="login.php" method="POST">    
+<form action="login.php" method="POST" id="loginForm">    
     <div class="row">
         <div class="col s12 m4 offset-m4">
             <div class="card">
@@ -56,8 +56,7 @@
                     </div>
                     
                     <div class="form-field">
-                        <button id="loginButton" class="btn-large waves-effect waves-light black">Login</button>
-                        <input type="submit">
+                        <button type="submit" value="Submit" id="loginButton" class="btn-large waves-effect waves-light black">Login</button>
                     </div><br>
 
                 </div>
