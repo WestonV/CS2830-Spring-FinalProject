@@ -8,7 +8,7 @@
     $loggedin = empty($_SESSION['loggedin']) ? false : $_SESSION['loggedin'];      //check to see if user has already logged on
 
     if($loggedIn){
-        header("Location: ../index.html");
+        header("Location: test.php");
         exit;
     }
 
@@ -26,7 +26,7 @@
 
         if($username == "test" && $password == "pass"){
             $_SESSION['loggedin'] = $username;
-            header("Location: ../index.html");
+            header("Location: test.php");
             exit;
         }else{
             $error = "Error: Incorrect username or password";
