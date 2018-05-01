@@ -6,7 +6,7 @@
 
     $loggedin = empty($_SESSION['loggedin']) ? false : $_SESSION['loggedin'];
     if(!$loggedIn){
-        header("Location: login.php");
+        header("Location: ../index.html");
         exit;
     }
 ?>
@@ -20,6 +20,6 @@
     <title>test</title>
 </head>
 <body>
-    <p>Succes<p>
+    <p>Success<p>
 </body>
 </html>

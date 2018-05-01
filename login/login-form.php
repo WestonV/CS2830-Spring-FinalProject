@@ -28,14 +28,13 @@
             <a href="../index.html" class="brand-logo">Weston's Movies</a>
             <ul class="right">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-                <li><a href="login.php">Login</a></li>
+                <li><a href="login-form.php">Login</a></li>
             </ul>
         </div>
     </nav>
 
     
-<form action="login.php" method="POST" id="loginForm">    
+<form action="loginTest.php" method="POST" id="loginForm">    
     <div class="row">
         <div class="col s12 m4 offset-m4">
             <div class="card">
@@ -47,16 +46,16 @@
                 <div class="card-content">
                     <div class="form-field">
                         <label for="username">Username</label>
-                        <input type="text" id="username">
+                        <input type="text" id="username" name="username">
                     </div><br>
                     
                     <div class="form-field">
                         <label for="password">Password</label>
-                        <input type="password" id="password">
+                        <input type="password" id="password" name="password">
                     </div>
                     
                     <div class="form-field">
-                        <button type="submit" value="Submit" id="loginButton" class="btn-large waves-effect waves-light black">Login</button>
+                        <button name="login" type="submit" id="loginButton" class="btn-large waves-effect waves-light black">Login</button>
                     </div><br>
 
                 </div>
