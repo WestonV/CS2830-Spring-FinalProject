@@ -14,12 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/moviePage.css"/>
     <!--Materialize CSS: Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-
-    <style>
-        p, h1 {
-            color: white;
-        }
-    </style>    
+  
 
 </head>
 <body>
@@ -34,9 +29,9 @@
         <a onclick="updateTrailer('kingsman-a-golden-circle')" id="kingsman-a-golden-circle" class="carousel-item hoverable"><img src="https://image.tmdb.org/t/p/w500/34xBL6BXNYFqtHO9zhcgoakS4aP.jpg"></a>
         <a onclick="updateTrailer('get-out')" id="get-out" class="carousel-item hoverable"><img src="https://image.tmdb.org/t/p/w500/1SwAVYpuLj8KsHxllTF8Dt9dSSX.jpg"></a>
     </div>
-    <div class="center">Click on a movie to see the trailer, brief discription, and my rating.</div>
+    <div id="message" class="center">Click on a movie to see the trailer, brief discription, and my rating.</div>
     <iframe id="youtubeVid" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <div id="infoBox" class="white-text center"></div>
+    <div id="movieInfo"><p id="infoBox" class="white-text center"></p></div>
     <h1 id="rating" class="center"></h1>
 
 

@@ -7,7 +7,13 @@
     <!--Materialize CSS: Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
-    
+    <style>
+        footer{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
 
 </head>
 <body>
@@ -24,9 +30,8 @@
     </div>
 
     <?php include 'components/black-footer.php' ?>
-<!--    jQuery import using Google CDN-->
+    <!--    jQuery import using Google CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
     <!-- Materialize JS: Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="js/initCarousel.js"></script>
