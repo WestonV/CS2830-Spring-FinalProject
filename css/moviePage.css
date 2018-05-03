@@ -2,3 +2,16 @@ body {
     background-color: black;
     color: white;
 }
+
+.page-footer {
+    background-color: white;
+}
+iframe {
+    width: 560px;
+    height: 315px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid darkslategrey;
+}
