@@ -3,35 +3,30 @@ function updateTrailer(movieID){
         case "wind-river" :
            document.getElementById("youtubeVid").src = "https://www.youtube.com/embed/0F4Yxwo2ZEk?start=21"
            document.getElementById("rating").innerHTML = "My rating: 8.1"
-           document.getElementById("infoBox").innerHTML = "A veteran tracker with the Fish and Wildlife Service helps to investigate the murder of a young Native American woman, and uses the case as a means of seeking redemption for an earlier act of irresponsibility which ended in tragedy."
            document.getElementById('youtubeVid').style.visibility='visible'
            document.getElementById('message').style.visibility='hidden'
            break;
         case "thor-ragnarok" :
             document.getElementById("youtubeVid").src = "https://www.youtube.com/embed/ue80QwXMRHg"
             document.getElementById("rating").innerHTML = "My rating: 9.5"
-            document.getElementById("infoBox").innerHTML = "Thor is imprisoned on the planet Sakaar, and must race against time to return to Asgard and stop Ragnarök, the destruction of his world, which is at the hands of the powerful and ruthless villain Hela."
             document.getElementById('youtubeVid').style.visibility='visible'
             document.getElementById('message').style.visibility='hidden'
             break;
         case "kingsman-a-golden-circle" :
             document.getElementById("youtubeVid").src = "https://www.youtube.com/embed/6Nxc-3WpMbg"
             document.getElementById("rating").innerHTML = "My rating: 8.9"
-            document.getElementById("infoBox").innerHTML = "When their headquarters are destroyed and the world is held hostage, the Kingsman's journey leads them to the discovery of an allied spy organization in the US. These two elite secret organizations must band together to defeat a common enemy."
             document.getElementById('youtubeVid').style.visibility='visible'
             document.getElementById('message').style.visibility='hidden'
             break;
         case "ready-player-one" :
             document.getElementById("youtubeVid").src = "https://www.youtube.com/embed/cSp1dM2Vj48"
             document.getElementById("rating").innerHTML = "My rating: 7.1"
-            document.getElementById("infoBox").innerHTML = "When the creator of a virtual reality world called the OASIS dies, he releases a video in which he challenges all OASIS users to find his Easter Egg, which will give the finder his fortune."
             document.getElementById('youtubeVid').style.visibility='visible'
             document.getElementById('message').style.visibility='hidden'
             break;
         case "get-out" :
             document.getElementById("youtubeVid").src = "https://www.youtube.com/embed/sRfnevzM9kQ"
             document.getElementById("rating").innerHTML = "My rating: 9.0"
-            document.getElementById("infoBox").innerHTML = "A young African-American visits his white girlfriend's parents for the weekend, where his simmering uneasiness about their reception of him eventually reaches a boiling point."
             document.getElementById('youtubeVid').style.visibility='visible'
             document.getElementById('message').style.visibility='hidden'
             break;
@@ -39,7 +34,24 @@ function updateTrailer(movieID){
             document.getElementById("youtubeVid").src=""
             document.getElementById("rating").innerHTML=""
             document.getElementById('youtubeVid').style.visibility='visible'
-            document.getElementById("infoBox").innerHTML="Click on a movie to see the trailer, brief discription, and my rarting."
             break;
     }
+}
+
+function getMovieInfo(movieID){
+    var xmlHttp = new
+    XMLHttpRequest();
+    xmlHttp.onload = function(){
+        if(xmlHttp.status == 200){
+            var infoBox = document.getElementById('infoBox');
+            infoBox.innerHTML = xmlHttp.responseText;
+        }
+    }
+    var reqURL = "movieInfo.php?descriptionID=" + movieID;
+    xmlHttp.open("GET", reqURL, true);
+    xmlHttp.send();
+
+    console.log(movieID);
+    console.log(xmlHttp.responseText);
+    console.log(reqURL);
 }
