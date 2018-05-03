@@ -26,7 +26,7 @@
     
     <?php include 'components/white-navbar.php' ?>
 
-    <h5 class="center">Welcome to Weston's Movies review site. Checkout all the movies I've made reviews for below! blah blah </h5>
+    <h5 class="center">Welcome to Weston's Movies review site. Checkout all the movies I've made reviews for below!</h5>
     <div class="carousel black">
         <a onclick="updateTrailer('wind-river')" id="wind-river" class="carousel-item hoverable"><img src="https://image.tmdb.org/t/p/w500/pySivdR845Hom4u4T2WNkJxe6Ad.jpg"></a>
         <a onclick="updateTrailer('thor-ragnarok')" id="thor-ragnarok"  class="carousel-item hoverable"><img src="https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg"></a>
