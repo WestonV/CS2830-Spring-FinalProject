@@ -13,36 +13,28 @@
         crossorigin="anonymous">
     </script>
     
-    <!-- <script>
-        $(function(){
-            $("input[type=submit]").button();
-        })
-    </script> -->
-
 </head>
 <body>
 
 <!--    nav bar design -->
     <nav class="black">
         <div class="navbar-wrapper container">
-            <a href="../index.html" class="brand-logo">Weston's Movies</a>
+            <a href="../index.php" class="brand-logo">Weston's Movies</a>
             <ul class="right">
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.php">Home</a></li>
                 <li><a href="login-form.php">Login</a></li>
             </ul>
         </div>
     </nav>
 
-    
-<form action="loginTest.php" method="POST" id="loginForm">    
+    <!-- login form -->
+<form action="loginValidate.php" method="POST" id="loginForm">    
     <div class="row">
         <div class="col s12 m4 offset-m4">
             <div class="card">
-
                 <div class="card-action white black-text">
                     <h3>Login Form</h3>
                 </div>
-                
                 <div class="card-content">
                     <div class="form-field">
                         <label for="username">Username</label>
@@ -57,14 +49,13 @@
                     <div class="form-field">
                         <button name="login" type="submit" id="loginButton" class="btn-large waves-effect waves-light black">Login</button>
                     </div><br>
-
                 </div>
             </div>
         </div>
     </div>
   </form>  
     
-    
+    <!-- footer -->
     <footer class="page-footer black">
         <div class="footer-copyright">
             <div class="container">
