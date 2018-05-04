@@ -6,7 +6,7 @@
 
     $loggedin = empty($_SESSION['loggedin']) ? false : $_SESSION['loggedin'];
     if(!$loggedIn){
-        header("Location: ../index.php");
+        header("Location: ../movie.php");
         exit;
     }
 ?>

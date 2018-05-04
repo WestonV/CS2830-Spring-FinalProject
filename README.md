@@ -16,7 +16,7 @@ Requirements and How I Meet Them:
     I use a simple black and white color scheme throughout the whole site. 
     I also use the same navbar, footer, and carousel design throughout my pages
 3. _well structured and organized:_ 
-    I used external css files, as well as php templates, then I simply use "include" to load those php pages. 
+    I used external css files, as well as php templates, then I simply use "include" to load those php pages. These php templates can be found inside the components folder.
         An example of this can be found in index.php on line 27
 4. _public content and private content_ 
     The index.php page can be accessed by anyone, but the movie.php page can only be accessed if one logs in. 
