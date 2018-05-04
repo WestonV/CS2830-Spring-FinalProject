@@ -56,4 +56,11 @@ Requirements and How I Meet Them:
         Future development includes searching a movie database through an API, and adding those movies to specific lists, like a "watch later" list, or a "have watched" list.
 17. _Documentation_ 
     This README.md page is my documentation. I hope that everything is easy to find as I have listed out the specific lines of code as to where things are found.
+
+Works Cited
+I used materialize.css for pretty much all of my styling and compenents, specifically the navbar, footer, buttons, carousel, as well as my login-form.
+I also used some code found at from stack overflow to get my reviewList.js script to work: https://stackoverflow.com/questions/29871222/making-a-list-in-html-from-value-of-textarea
+
+
+
 **Thanks for grading this and have a good summer!**
