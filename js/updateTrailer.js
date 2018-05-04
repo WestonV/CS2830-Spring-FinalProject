@@ -50,8 +50,4 @@ function getMovieInfo(movieID){
     var reqURL = "movieInfo.php?descriptionID=" + movieID;
     xmlHttp.open("GET", reqURL, true);
     xmlHttp.send();
-
-    console.log(movieID);
-    console.log(xmlHttp.responseText);
-    console.log(reqURL);
 }

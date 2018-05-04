@@ -9,9 +9,15 @@
 
     <style>
         footer{
-            position: absolute;
+            position: relative;
             bottom: 0;
             left: 0;
+        }
+        #movieForm{
+            width: 20%;
+        }
+        #list-title{
+            visibility: hidden;
         }
     </style>
 
@@ -20,7 +26,7 @@
 
     <?php include 'components/black-navbar.php' ?>
 
-    <h5>Welcome to Weston's Movies review site. Checkout all the movies I've made reviews for below! blah blah </h5>
+    <h5 class="center">Welcome to Weston's Movies review site. Checkout all the movies I've made reviews for below!</h5>
     <div class="carousel">
         <a id="wind-river" class="carousel-item hoverable" href="movie.php"><img alt="Wind River" src="https://image.tmdb.org/t/p/w500/pySivdR845Hom4u4T2WNkJxe6Ad.jpg"></a>
         <a id="thor-ragnarok" class="carousel-item hoverable" href="movie.php"><img alt="Thor Ragnarok" src="https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg"></a>
@@ -29,12 +35,21 @@
         <a id="get-out" class="carousel-item hoverable" href="movie.php"><img alt="Get Out" src="https://image.tmdb.org/t/p/w500/1SwAVYpuLj8KsHxllTF8Dt9dSSX.jpg"></a>
     </div>
 
+        <div class="center">
+            Add a movie you want me to review: <input type="text" id="movieForm" name="movie"><br>
+            <a class="waves-effect waves-light black btn center" onclick="submit();">Submit</a>
+        </div>
+        <div id="list-title" class="center">Your list for me to watch:</div>
+        <div class="movie-list center">
+            <div id = "list"></div>
+        </div>
+        
     <?php include 'components/black-footer.php' ?>
     <!--    jQuery import using Google CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Materialize JS: Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="js/initCarousel.js"></script>
-    <script src="js/movieInfo.js"></script>
+    <script src="js/reviewList.js"></script>
 </body>
 </html>
